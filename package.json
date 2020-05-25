@@ -1,0 +1,26 @@
+{
+  "name": "boilerplate-code-flask-dashboard",
+  "mastertemplate": "boilerplate-code-flask-dashboard",
+  "version": "0.0.1",
+  "description": "Template project - Flask Dashboard Boilerplate Code.",
+  "scripts": {
+      "start"  : "flask run",
+      "shell"  : "flask shell"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/app-generator/boilerplate-code-flask-dashboard"
+  },
+  "bugs": {
+      "url": "https://github.com/app-generator/boilerplate-code-flask-dashboard/issues",
+      "email": "support@appseed.us"
+  },
+  "author": "AppSeed App Generator <support@appseed.us> (https://appseed.us)",
+  "engines": {
+      "node": ">=10.0.0"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
