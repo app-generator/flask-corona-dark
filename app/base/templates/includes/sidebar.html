@@ -1,73 +1,153 @@
 
-    <nav class="pcoded-navbar">
-        <div class="navbar-wrapper">
-            <div class="navbar-brand header-logo">
-                <a target="_blank" href="https://appseed.us/boilerplate-code/flask-dashboard" class="b-brand">
-                    <div class="b-bg">
-                        <i class="feather icon-trending-up"></i>
-                    </div>
-                    <span class="b-title">Flask Dashboard</span>
-                </a>
-                <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
-            </div>
-            <div class="navbar-content scroll-div">
-                <ul class="nav pcoded-inner-navbar">
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Navigation</label>
-                    </li>
-                    <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" class="nav-item active">
-                        <a href="/" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>UI Element</label>
-                    </li>
-                    <li data-username="basic components Button Alert Badges breadcrumb Paggination progress Tooltip popovers Carousel Cards Collapse Tabs pills Modal Grid System Typography Extra Shadows Embeds" class="nav-item pcoded-hasmenu">
-                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Components</span></a>
-                        <ul class="pcoded-submenu">
-                            <li class=""><a href="/ui-button.html" class="">Button</a></li>
-                            <li class=""><a href="/ui-badges.html" class="">Badges</a></li>
-                            <li class=""><a href="/ui-breadcrumb-pagination.html" class="">Breadcrumb & paggination</a></li>
-                            <li class=""><a href="/ui-collapse.html" class="">Collapse</a></li>
-                            <li class=""><a href="/ui-tabs.html" class="">Tabs & pills</a></li>
-                            <li class=""><a href="/ui-typography.html" class="">Typography</a></li>
-                            <li class=""><a href="/ui-icons.html" class="">Feather<span class="pcoded-badge label label-danger">NEW</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Forms & table</label>
-                    </li>
-                    <li data-username="form elements advance componant validation masking wizard picker select" class="nav-item">
-                        <a href="/ui-forms.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Form elements</span></a>
-                    </li>
-                    <li data-username="Table bootstrap datatable footable" class="nav-item">
-                        <a href="/ui-tables.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-server"></i></span><span class="pcoded-mtext">Table</span></a>
-                    </li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Chart & Maps</label>
-                    </li>
-                    <li data-username="Charts Morris" class="nav-item"><a href="/charts-morris.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-pie-chart"></i></span><span class="pcoded-mtext">Chart</span></a></li>
-                    <li data-username="Maps Google" class="nav-item"><a href="/maps-google.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-map"></i></span><span class="pcoded-mtext">Maps</span></a></li>
-                    <li class="nav-item pcoded-menu-caption">
-                        <label>Pages</label>
-                    </li>
-                    <li data-username="Authentication Sign up Sign in reset password Change password Personal information profile settings map form subscribe" class="nav-item pcoded-hasmenu">
-                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-lock"></i></span><span class="pcoded-mtext">Authentication</span></a>
-                        <ul class="pcoded-submenu">
-                            <li class=""><a href="/auth-reset-pass.html" class="">Reset Pass</a></li>
-                            <li class=""><a href={{ url_for('base_blueprint.register') }} class="">Register</a></li>
-                        </ul>
-                    </li>
-                    <li data-username="Sample Page" class="nav-item"><a href="/page-blank.html" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample page</span></a></li>
-                    <li data-username="Sample Page" class="nav-item"><a href="/page-403.html" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Error 403</span></a></li>
-                    <li data-username="Sample Page" class="nav-item"><a href="/page-404.html" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Error 404</span></a></li>
-                    <li data-username="Sample Page" class="nav-item"><a href="/page-500.html" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Error 500</span></a></li>
-
-                    <li data-username="Disabled Menu" class="nav-item">
-                        <a href={{ url_for('base_blueprint.logout') }} class="nav-link">
-                            <span class="pcoded-micon"><i class="feather icon-power"></i></span><span class="pcoded-mtext">Logout [{{ current_user.username }}]</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo" href="index.html"><img src="/static/assets/images/logo.svg" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini" 
+             target="_blank" rel="noreferrer noopener"
+             href="https://appseed.us/admin-dashboards/flask-dashboard-corona-dark">
+              <img src="/static/assets/images/logo-mini.svg" alt="logo" /></a>
         </div>
-    </nav>
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="/static/assets/images/faces/face15.jpg" alt="">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                  <h5 class="mb-0 font-weight-normal">
+                    {{ current_user.username }}
+                  </h5>
+                  <span>
+                    {{ current_user.email }}
+                  </span>
+                </div>
+              </div>
+              <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
+              <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-settings text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-onepassword  text-info"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-calendar-today text-success"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Navigation</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="/">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="mdi mdi-laptop"></i>
+              </span>
+              <span class="menu-title">Basic UI Elements</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/ui-buttons.html">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/ui-dropdowns.html">Dropdowns</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/ui-typography.html">Typography</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="/ui-forms.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-playlist-play"></i>
+              </span>
+              <span class="menu-title">Form Elements</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="/ui-tables.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+              <span class="menu-title">Tables</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="/chartjs.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-chart-bar"></i>
+              </span>
+              <span class="menu-title">Charts</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="/ui-icons.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-contacts"></i>
+              </span>
+              <span class="menu-title">Icons</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <span class="menu-icon">
+                <i class="mdi mdi-security"></i>
+              </span>
+              <span class="menu-title">User Pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/page-blank.html"> Blank Page </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/page-404.html"> 404 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/page-500.html"> 500 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/page-login.html"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/page-register.html"> Register </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" 
+               target="_blank" rel="noreferrer noopener"
+               href="https://appseed.us/admin-dashboards/flask-dashboard-corona-dark">
+              <span class="menu-icon">
+                <i class="mdi mdi-file-document-box"></i>
+              </span>
+              <span class="menu-title">Product Info</span>
+            </a>
+          </li>
+        </ul>
+      </nav>

@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate-code-flask-dashboard",
+  "name": "flask-dashboard-corona-dark",
   "mastertemplate": "boilerplate-code-flask-dashboard",
   "version": "0.0.1",
   "description": "Template project - Flask Dashboard Boilerplate Code.",
@@ -9,10 +9,10 @@
   },
   "repository": {
       "type": "git",
-      "url": "https://github.com/app-generator/boilerplate-code-flask-dashboard"
+      "url": "https://github.com/app-generator/flask-dashboard-corona-dark"
   },
   "bugs": {
-      "url": "https://github.com/app-generator/boilerplate-code-flask-dashboard/issues",
+      "url": "https://github.com/app-generator/flask-dashboard-corona-dark/issues",
       "email": "support@appseed.us"
   },
   "author": "AppSeed App Generator <support@appseed.us> (https://appseed.us)",
