@@ -2,7 +2,7 @@
 
 > **Open-Source Admin Dashboard** coded in **Flask Framework** by **AppSeed** [Web App Generator](https://appseed.us/app-generator) - Features:
 
-- Sample UI Kit: **Corona Dark** (Lite Version) provided by **Bootstrapdash**
+- UI Kit: **Corona Dark** (Lite Version) provided by **Bootstrapdash**
 - SQLite, PostgreSQL, SQLAlchemy ORM
 - Alembic (DB schema migrations)
 - Modular design with **Blueprints**
