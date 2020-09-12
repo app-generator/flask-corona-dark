@@ -65,7 +65,7 @@
           <li class="nav-item nav-category">
             <span class="nav-link">Navigation</span>
           </li>
-          <li class="nav-item menu-items">
+          <li class="nav-item menu-items {% if 'index' in segment %} active {% endif %}">
             <a class="nav-link" href="/">
               <span class="menu-icon">
                 <i class="mdi mdi-speedometer"></i>
@@ -89,7 +89,7 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item menu-items">
+          <li class="nav-item menu-items {% if 'ui-forms' in segment %} active {% endif %}">
             <a class="nav-link" href="/ui-forms.html">
               <span class="menu-icon">
                 <i class="mdi mdi-playlist-play"></i>
@@ -97,7 +97,7 @@
               <span class="menu-title">Form Elements</span>
             </a>
           </li>
-          <li class="nav-item menu-items">
+          <li class="nav-item menu-items {% if 'ui-tables' in segment %} active {% endif %}">
             <a class="nav-link" href="/ui-tables.html">
               <span class="menu-icon">
                 <i class="mdi mdi-table-large"></i>
@@ -105,7 +105,7 @@
               <span class="menu-title">Tables</span>
             </a>
           </li>
-          <li class="nav-item menu-items">
+          <li class="nav-item menu-items {% if 'chartjs' in segment %} active {% endif %}">
             <a class="nav-link" href="/chartjs.html">
               <span class="menu-icon">
                 <i class="mdi mdi-chart-bar"></i>
@@ -113,7 +113,7 @@
               <span class="menu-title">Charts</span>
             </a>
           </li>
-          <li class="nav-item menu-items">
+          <li class="nav-item menu-items {% if 'ui-icons' in segment %} active {% endif %}">
             <a class="nav-link" href="/ui-icons.html">
               <span class="menu-icon">
                 <i class="mdi mdi-contacts"></i>
@@ -139,14 +139,14 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item menu-items">
+          <li class="nav-item menu-items active">
             <a class="nav-link" 
                target="_blank" rel="noreferrer noopener"
-               href="https://appseed.us/admin-dashboards/flask-dashboard-corona-dark">
+               href="https://appseed.us/admin-dashboards/flask-dashboard-corona-dark-pro">
               <span class="menu-icon">
                 <i class="mdi mdi-file-document-box"></i>
               </span>
-              <span class="menu-title">Product Info</span>
+              <span class="menu-title">PRO Version</span>
             </a>
           </li>
         </ul>
