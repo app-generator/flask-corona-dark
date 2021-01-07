@@ -21,7 +21,7 @@ Corona Dark Free admin template has beautiful typography, crisp design, and neat
 
 - [Flask Corona Dark](https://appseed.us/admin-dashboards/flask-dashboard-corona-dark) - product page
 - [Flask Corona Dark Demo](https://flask-dashboard-corona-dark.appseed.us/) - LIVE App
-
+- [Flask Tutorial](https://github.com/app-generator/tutorial-flask) - Getting started with Flask
 
 <br />
 
