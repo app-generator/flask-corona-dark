@@ -1,5 +1,16 @@
 # Change Log
 
+## [1.0.4] 2021-11-26
+### Improvements & Fixes
+
+- Bump Flask Codebase to [v2.0.0](https://github.com/app-generator/boilerplate-code-flask-dashboard/releases)
+  - Dependencies update (all packages)
+    - Use Flask==2.0.1 (latest stable version)
+  - Better Code formatting
+  - Improved Files organization
+  - Optimize imports
+  - Docker Scripts Update 
+
 ## [1.0.3] 2021-05-16
 ### Dependencies Update
 
