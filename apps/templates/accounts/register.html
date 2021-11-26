@@ -1,0 +1,91 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} Register {% endblock %} 
+
+<!-- Specific Plugin CSS goes HERE -->
+{% block plugin_stylesheets %}{% endblock plugin_stylesheets %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <div class="container-fluid page-body-wrapper full-page-wrapper">
+    <div class="row w-100 m-0">
+      <div class="content-wrapper full-page-wrapper d-flex align-items-center auth login-bg">
+        <div class="card col-lg-4 mx-auto">
+          <div class="card-body px-5 py-5">
+            <h3 class="card-title text-left mb-3">
+              <a href="https://appseed.us/admin-dashboards/flask-dashboard-corona-dark">Flask Corona Dark</a> - Sign UP
+            </h3>
+
+            <span class="mb-0 text-muted">
+              {% if msg %}
+                  {{ msg | safe }}
+              {% else %}
+                  Add your credentials
+              {% endif %} 
+            </span>
+            
+            <div class="d-flex">
+              <br />    
+            </div>
+
+            <!-- Hide the form on success -->
+            {% if not success %}
+              <form role="form" method="post" action="">
+
+                {{ form.hidden_tag() }}  
+
+                <div class="form-group">
+                  <label>Username</label>
+                  {{ form.username(placeholder="Username", class="form-control p_input") }}
+                </div>
+
+                <div class="form-group">
+                  <label>Email</label>
+                  {{ form.email(placeholder="Email", class="form-control p_input") }}
+                </div>
+
+                <div class="form-group">
+                  <label>Password</label>
+                  {{ form.password(placeholder="Password", class="form-control p_input", type="password") }}
+                </div>
+                
+                <div class="form-group d-flex align-items-center justify-content-between">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" checked=""> Agree with terms 
+                    </label>
+                  </div>
+                  <a href={{ url_for('authentication_blueprint.login') }} class="forgot-pass">Use existing account</a>
+                </div>
+                <div class="text-center">
+                  <button type="submit" name="register" class="btn btn-primary btn-block enter-btn">Register</button>
+                </div>
+                <div class="d-flex">
+                  <br />    
+                </div>
+              </form>
+            {% endif %}
+
+            <p class="sign-up">
+              &copy; <a target="_blank" rel="noreferrer noopener" href="https://bit.ly/2UTgih5">Bootstrapdash</a> 
+              - coded by <a target="_blank" rel="noreferrer noopener" href="https://appseed.us">AppSeed</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+    </div>
+    <!-- row ends -->
+  </div>
+
+{% endblock content %}
+
+<!-- Specific Plugin JS goes HERE  -->
+{% block plugin_javascripts %}{% endblock plugin_javascripts %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
