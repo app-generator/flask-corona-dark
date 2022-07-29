@@ -40,10 +40,6 @@ Visit `http://localhost:85` in your browser. The app should be up & running.
 
 <br />
 
-![Flask Dashboard Corona Dark - Open-Source template project provided by AppSeed.](https://user-images.githubusercontent.com/51070104/143545895-4792e115-7577-40e0-b67a-c60933dd2306.gif)
-
-<br />
-
 ## ✨ How to use it
 
 ```bash
