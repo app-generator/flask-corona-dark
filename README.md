@@ -7,7 +7,7 @@ Open-source **[Flask Dashboard](https://appseed.us/admin-dashboards/flask)** gen
 
 <br />
 
-> Features
+> 🚀 Built with [App Generator](https://appseed.us/generator/)
 
 - `Up-to-date dependencies`
 - `DBMS`: SQLite
