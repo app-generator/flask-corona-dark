@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.6] 2022-10-13
+### Improvements
+
+- Bumps Codebase Version
+  - [App Generator](https://appseed.us/generator/) version
+
 ## [1.0.5] 2022-01-16
 ### Improvements
 
