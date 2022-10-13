@@ -10,7 +10,7 @@ Open-source **[Flask Dashboard](https://appseed.us/admin-dashboards/flask)** gen
 > Features
 
 - `Up-to-date dependencies`
-- `DBMS`: SQLite, PostgreSQL (production) 
+- `DBMS`: SQLite
 - `DB Tools`: SQLAlchemy ORM, Flask-Migrate (schema migrations)
 - Session-Based authentication (via **flask_login**), Forms validation
 - `Deployment`: **Docker**, Gunicorn / Nginx, HEROKU
@@ -36,7 +36,7 @@ $ cd flask-corona-dark
 $ docker-compose up --build 
 ```
 
-Visit `http://localhost:85` in your browser. The app should be up & running.
+Visit `http://localhost:5085` in your browser. The app should be up & running.
 
 <br />
 
@@ -187,61 +187,8 @@ The generated file is saved in `static/assets/css` directory.
 
 <br />
 
-## ✨ Deployment
-
-The app is provided with a basic configuration to be executed in [Docker](https://www.docker.com/), [Gunicorn](https://gunicorn.org/), and [Waitress](https://docs.pylonsproject.org/projects/waitress/en/stable/).
-
-
-### [Gunicorn](https://gunicorn.org/)
----
-
-Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX.
-
-> Install using pip
-
-```bash
-$ pip install gunicorn
-```
-> Start the app using gunicorn binary
-
-```bash
-$ gunicorn --bind 0.0.0.0:8001 run:app
-Serving on http://localhost:8001
-```
-
-Visit `http://localhost:8001` in your browser. The app should be up & running.
-
-
-<br />
-
-### [Waitress](https://docs.pylonsproject.org/projects/waitress/en/stable/)
----
-
-Waitress (Gunicorn equivalent for Windows) is meant to be a production-quality pure-Python WSGI server with very acceptable performance. It has no dependencies except ones that live in the Python standard library.
-
-> Install using pip
-
-```bash
-$ pip install waitress
-```
-> Start the app using [waitress-serve](https://docs.pylonsproject.org/projects/waitress/en/stable/runner.html)
-
-```bash
-$ waitress-serve --port=8001 run:app
-Serving on http://localhost:8001
-```
-
-Visit `http://localhost:8001` in your browser. The app should be up & running.
-
-<br />
-
-## ✨ Credits & Links
-
-- [Flask Framework](https://www.palletsprojects.com/p/flask/) - The offcial website
-- [Boilerplate Code](https://appseed.us/boilerplate-code) - Index provided by **AppSeed**
-- [Boilerplate Code](https://github.com/app-generator/boilerplate-code) - Index published on Github
 
 <br />
 
 ---
-[Flask Corona Dark](https://appseed.us/admin-dashboards/flask-dashboard-corona-dark) - Provided by **AppSeed [App Generator](https://appseed.us/app-generator)**.
+[Flask Corona Dark](https://appseed.us/product/corona-dark/flask/) - Provided by **[App Generator](https://appseed.us/app-generator)**.
